@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+}
+ul,
+li {
+  list-style: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background: violet;
+  height: 150px;
+}
+.container {
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.header__title {
+  color: grey;
+  text-align: center;
+  font-size: 45px;
+  padding: 50px;
+}
+.main {
+  background-color: rgb(233, 198, 226);
+  height: 900px;
+}
+
+.input__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+textarea {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.calc__button {
+  height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #ccc;
+  font-size: 20px;
+  color: #fff;
+}
+
+.calc__button:hover {
+  background-color: violet;
+  cursor: pointer;
+}
+h2 {
+  background: lightgrey;
+  color: #131314;
+  padding: 10px;
+}
+.calc__list {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  padding: 30px;
+  background: lightgrey;
+  font-size: 30px;
+}
+span {
+	margin-left: 15px;
+}
+/* {
+	background-image: url('Image_ 619.JPG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	width: 500px;
+	height: 200px;
+}*/
+
+/*.aside {
+  height: 100px;
+  width: 100%;
+  background: lightgrey;
+  padding: 30px;
+  font-size: 30px;
+  float: center;
+}*/
