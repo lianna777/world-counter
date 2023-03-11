@@ -9,6 +9,7 @@ const sentences = document.querySelector("#sentences");
 // Находим кнопку, при нажатии на которую, будут считаться данные
 const button = document.querySelector(".calc__button");
 
+// Функция-обертка, которая запускает функции внутри
 function counter() {
   if (textarea.value == "") {
     words.innerText = 0;
@@ -21,6 +22,7 @@ function counter() {
   }
 }
 
+// Функция, которая считает слова
 function countWords() {
   const string = textarea.value;
   let array = string.split(" ");
@@ -28,8 +30,10 @@ function countWords() {
   words.innerText = array;
 }
 
+// Функция считает количество предложений
 function countSentences() {
   const string = textarea.value;
+  // Создаем счетчик, который считает количество предложение в строке
   let counter = 0;
   for (let i = 0; i < string.length; i++) {
     if (string[i] == ".") {
@@ -44,8 +48,11 @@ function countSentences() {
 }
 
 function countCharacters() {
+  // Здесь забираем строку из textarea
   const string = textarea.value;
+  // Здесь разбиваем на элементы массива по разделителю ''
   const array = string.split("");
+  // Создаем счетчик, который считает количество символов
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
     if (array[i] != " ") {
